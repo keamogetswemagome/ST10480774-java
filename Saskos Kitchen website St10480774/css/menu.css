@@ -1,0 +1,170 @@
+   /* Menu Page Specific Styles */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .menu-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px black;
+      padding: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px black;
+    }
+
+    .menu-card h3 {
+      color: darkblue;
+      margin-bottom: 0.5rem;
+    }
+
+    .menu-card p {
+      margin-bottom: 0.5rem;
+    }
+
+    .menu-card label {
+      display: block;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    .menu-card input[type="checkbox"] {
+      margin-right: 0.5rem;
+      transform: scale(1.2);
+    }
+
+    /* -------------------- HEADER & NAVIGATION -------------------- */
+    header {
+      background: darkblue;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: red;
+    }
+
+    /* Drinks Section */
+    .drinks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .drinks-card {
+      background: white;
+      padding: 0.8rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px black;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .drinks-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px black;
+    }
+
+    /* Submit Button */
+    button {
+      background: darkblue;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background: darkred;
+    }
+
+    /* Footer */
+    footer {
+      background: darkblue;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .menu-grid, .drinks-grid {
+        grid-template-columns: 1fr;
+      }
+
+      input[type="checkbox"] {
+        transform: scale(1);
+      }
+    }
+    button {
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: red;
+}
+
+span {
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ /* Center ALL content on the page */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+  }

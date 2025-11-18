@@ -1,0 +1,110 @@
+# Sasko's Kitchen � part2
+Features of the CSS
+
+1. General Reset
+CSS
+  margin: 0.
+  padding: 0.
+  box-sizing: border-box.
+Resets default browser spacing
+Ensure consistent box-sizing across all elements.
+
+2. Body Styling 
+  font-family: Arial, Helvetica, sans-serif.
+  line-height: 1.6.
+  background-color: white
+  color: black
+Applied a clean font for readability.
+Light background (white) with dark text for contrast.
+Line height improves text spacing.
+
+3. Header & Navigation
+header
+  background: dark blue.
+  color: white.
+  padding: 1.5rem.
+  text-align center.
+
+Dark blue background with white text.
+Center-aligned header content.
+Navigation menu uses flexbox for horizontal layout with spacing.
+nav ul li a: hover,
+nav ul li a. active 
+  color: red
+Links highlight red on hover or when active.
+
+4. About Page Sections
+section image
+  border: 3px solid dark blue.
+  box-shadow: 0 3px 8px rgba (0,0,0,0.2).
+Added borders and shadow around images for a polished look.
+
+section article
+  background: white.
+  padding: 1rem.
+  border-radius: 10px.
+  margin-bottom: 1rem.
+  box-shadow: 0 2px 6px rgba (0,0,0,0.1).
+
+Team member descriptions are styled as cards with rounded corners and shadows.
+
+5. Forms (Reusable CSS for Order/Contact Pages)
+  background: white.
+  padding: 1.5rem.
+  border-radius: 10px.
+  box-shadow: 0 2px 6px rgba (0,0,0,0.1).
+Clean white card-style forms.
+Labels bold and spaced.
+Inputs styled with padding, border-radius, and spacing.
+
+6. Buttons
+button 
+  background: dark blue.
+  color: white.
+  padding: 0.8rem 1.5rem.
+  border: none.
+  border-radius: 6px.
+  font-size: 1rem.
+  cursor: pointer.
+  transition: background 0.3s.
+
+button: hover 
+background: dark red.
+Dark blue button with white text.
+Smooth hover effect turns background dark red.
+
+7. Footer
+  background: dark blue.
+  color: white.
+text-align center.
+padding: 1.5rem 1rem.
+margin-top: 2rem.
+Matches header styling for consistency.
+Links styled bold and highlighted on hover.
+
+8. Responsive Design
+media (max-width: 768px)
+nav ul 
+flex-direction: column.
+    gap: 0.5rem.
+  main
+    padding: 1rem.
+  
+Navigation becomes vertical on smaller screens.
+Extra padding inside main for mobile readability.
+
+# Saskos's kitchen part3
+Features of java script
+
+  - added a welcome message
+  - added a smooth sroll for internal links
+  - navigation active effect
+  - botton hover animation
+  - add-to-cart hover popuos on Featured Meals
+  - pop ups
+  - functions on forms
+  - centered everything in the middle (text alignment)
+  - mobile friendly
+  - error handling
+
+

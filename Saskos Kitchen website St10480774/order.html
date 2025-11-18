@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sasko's Kitchen | Order</title>
+  <link rel="stylesheet" href="css/order.css">
+  <script src="JAVA/order.js"></script>
+
+
+ 
+</head>
+
+<body>
+<header>
+  <h1>Sasko's Kitchen</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="order.html" class="active">Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Place Your Order</h2>
+  <p>Fill in your details and select your meals:</p>
+  <form action="submit_order.php" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="address">Delivery Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <h3>Select Meals</h3>
+    <label><input type="checkbox" name="meal[]" value="MABENA R40"> MABENA – R40
+    <input type="number" name="qty_MABENA">
+    </label>
+    <label><input type="checkbox" name="meal[]" value="WITNESS R45"> WITNESS – R45
+    <input type="number" name="qty_WITNESS" >
+    </label>
+    <label><input type="checkbox" name="meal[]" value="ROSE R48"> ROSE – R48
+    <input type="number" name="qty_ROSE" >
+    </label>
+    <label><input type="checkbox" name="meal[]" value="JOSPHINA R52"> JOSPHINA – R52
+    <input type="number" name="qty_JOSPHINA">
+    </label>
+    <label><input type="checkbox" name="meal[]" value="JOSHUA R55"> JOSHUA – R55
+    <input type="number" name="qty_JOSHUA" >
+    </label>
+    <label><input type="checkbox" name="meal[]" value="ANDRIS R58"> ANDRIS – R58
+    <input type="number" name="qty_ANDRIS" >
+    </label>
+    <label><input type="checkbox" name="meal[]" value="LILAN R62"> LILAN – R62
+    <input type="number" name="qty_LILIAN" >
+    </label>
+    <label><input type="checkbox" name="meal[]" value="SAMANTHA R65">SAMANTHA  – R65
+    <input type="number" name="qty_SAMANTHA " >
+    </label>
+    </label>
+    <label><input type="checkbox" name="meal[]" value="SAMUEL R68"> SAMUEL – R68
+    <input type="number" name="qty_SAMUEL" >
+    </label>
+    </label>
+    <label><input type="checkbox" name="meal[]" value="MBONGENI R75"> MBONGENI – R75
+    <input type="number" name="qty_MBONGENI" >
+    </label>
+    <label><input type="checkbox" name="meal[]" value="TITO R90"> TITO – R90
+    <input type="number" name="qty_TITO" >
+    </label>
+
+    <h3>Drinks</h3>
+    <label><input type="checkbox" name="drink[]" value="COKE 330ml R14"> COKE – R14
+    <input type="number" name="qty_COKE" >
+    </label>
+    <label><input type="checkbox" name="drink[]" value="SPRITE R14"> SPRITE – R14
+    <input type="number" name="qty_SPRITE" >
+    </label>
+    <label><input type="checkbox" name="drink[]" value="STONEY R13"> STONEY – R13
+    <input type="number" name="qty_STONEY" >
+    </label>
+
+    <h3>Payment Method</h3>
+    <label><input type="radio" name="payment" value="Cash on Delivery" required> Cash on Delivery</label>
+    <label><input type="radio" name="payment" value="Card Payment"> Card Payment</label>
+
+    <h3>Special Instructions</h3>
+    <textarea name="instructions" rows="4" placeholder="Any extra requests?"></textarea>
+
+       <button type="submit">Submit Order</button><br>
+    Find more on our UberEats<br>
+    <a href="https://www.ubereats.com" target="_blank">
+      <button type="button">UberEats</button>
+    </a>
+  </form>
+
+  
+  <div id="thankYouPopup" class="popup">
+    <div class="popup-content">
+      <h3>Thank You!</h3>
+      <p>Please patiently wait — your order is on its way 🍽️</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Sasko's Kitchen. All rights reserved.</p>
+</footer>
+</body>
+</html>
